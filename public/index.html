@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XyM AI Chatbot</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar closed" id="sidebar">
+      <div class="logo">
+        <div class="logo-circle"></div>
+        XyM AI
+      </div>
+      <div class="sidebar-content">
+        <div class="sidebar-box">
+          <h3>
+            XyM AI Assistant
+          </h3>
+          <p>
+            Modern AI Chatbot menggunakan Gemini API.
+          </p>
+        </div>
+      </div>
+    </aside>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <button id="toggle-sidebar" class="toggle-sidebar">
+            ☰
+          </button>
+          <div>
+            <h1>XyM AI Chatbot</h1>
+            <p>
+              AI Assistant berbasis Gemini API
+            </p>
+          </div>
+        </div>
+        <div class="status">
+          Online
+        </div>
+      </div>
+
+      <!-- CHAT -->
+      <div id="chat-box" class="chat-box">
+        <!-- WELCOME -->
+        <div class="welcome">
+          <h3>
+            👋 Tanyakan seputar teknologi dan traveling.
+          </h3>
+          <p>
+            XyM AI siap membantu dengan jawaban yang cepat, rapi, dan informatif.
+          </p>
+        </div>
+      </div>
+
+      <!-- INPUT -->
+      <form id="chat-form" class="chat-form">
+        <div class="input-wrapper">
+          <textarea id="user-input" rows="1" placeholder="Tulis pertanyaan..." required></textarea>
+          <button type="submit">
+            Kirim
+          </button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <!-- Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- XSS -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.8/dist/purify.min.js"></script>
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
